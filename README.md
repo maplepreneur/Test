@@ -1097,11 +1097,12 @@ Dedicate 15 minutes daily:
 - `/tests`: Generate tests
 - `/fix`: Fix issues
 
-**Copilot CLI:**
+**Copilot CLI:** (Available in interactive sessions)
 - `copilot`: Start session
 - `Shift+Tab`: Switch modes
 - `/review`: Review code
 - `/diff`: See changes
+- `/usage`: Check token usage
 - `/help`: Get help
 - `@file`: Include file in context
 
