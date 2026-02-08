@@ -567,8 +567,8 @@ jobs:
           gh pr review ${{ github.event.inputs.pr-number }} \
             --comment "Requesting Copilot review..."
           
-          # Use Copilot CLI to review changes
-          copilot --prompt "Review the changes in this PR for bugs, security issues, and code quality"
+          # Note: For automated reviews, use the copilot-code-review-action instead
+          # Manual CLI reviews are better suited for interactive sessions
 ```
 
 ### Best Practices for Agentic Reviews
@@ -655,11 +655,13 @@ As a solo developer, you can also use Copilot to review code before committing:
 
 **In CLI:**
 ```bash
-# After making changes
-copilot --prompt "Review my uncommitted changes. Focus on security and bugs."
+# Start an interactive session
+copilot
+
+# Then in the session, ask for a review
+> Review my uncommitted changes. Focus on security and bugs.
 
 # Or use the /review command
-copilot
 > /review
 ```
 
@@ -1030,8 +1032,8 @@ Dedicate 15 minutes daily:
 
 **Track Your Usage:**
 - Monitor premium requests in VS Code (status bar)
-- Use `/usage` in Copilot CLI
-- Review monthly usage in GitHub settings
+- Use `/usage` in Copilot CLI (during an interactive session) to see token usage
+- Review monthly usage in GitHub settings at https://github.com/settings/copilot
 
 **Optimize for Value:**
 1. Use simpler tools for simple tasks (Google for syntax, Copilot for logic)
