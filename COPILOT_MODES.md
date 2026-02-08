@@ -366,7 +366,7 @@ copilot --experimental
 
 ### 2. **Deep Work Mode**
 ```bash
-copilot --experimental=false  # Disable autopilot
+copilot  # Start without experimental mode
 # Use plan mode for focused feature work
 # More intentional, less distraction
 ```
